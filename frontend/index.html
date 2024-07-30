@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Integração</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <section class="forms-section">
+            <form>
+                <fieldset>Aluno
+                    <p>
+                        <label for="name">Nome:</label><br>
+                        <input type="text" id="name"/>
+                    </p>
+                    <p>
+                        <label for="tia">TIA:</label><br>
+                        <input type="text" id="tia"/>
+                    </p>
+                    <p>
+                        <label for="course">Curso:</label><br>
+                        <input type="text" id="course"/>
+                    </p>
+                    <button id='button' onclick='insertStudent()'>Inserir</button>
+                </fieldset>
+            </form>
+    
+            <form>
+                <fieldset>Professor
+                    <p>
+                        <label for="name2">Nome:</label><br>
+                        <input type="text" id="name2"/>
+                    </p>
+                    <p>
+                        <label for="drt">DRT:</label><br>
+                        <input type="text" id="drt"/>
+                    </p>
+                    <p>
+                        <label for="area">Area:</label><br>
+                        <input type="text" id="area"/>
+                    </p>
+                    <p>
+                        <label for="curso">Curso:</label><br>
+                        <input type="text" id="curso"/>
+                    </p>
+                    <button id='button2' onclick='insertProfessor()'>Inserir</button>
+                </fieldset>
+            </form>
+        </section>
+        
+        <section id='content-aluno'></section>
+        <hr>
+        <section id='content-professor'></section>
+    </body>
+</html>

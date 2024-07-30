@@ -1,0 +1,111 @@
+/*variáveis*/
+:root{
+    --backgroundColor: #f0f0f0;
+    --cardColor: #fff;
+    --shadowColor: rgba(0, 0, 0, 0.2);
+}
+
+/*fontes*/
+
+/*reset*/
+html, body{
+    margin:0;
+}
+
+/*estilos básicos*/
+body{
+    background-color: var(--backgroundColor);
+}
+
+/* #content-aluno, #content-professor {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 20px;
+    
+    h1{
+        text-align: center;
+        align-self: center;
+        width: 100%;
+     }
+
+} */
+
+#content-aluno,
+#content-professor {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+#content-aluno h1,
+#content-professor h1 {
+  text-align: center;
+  width: 100%;
+}
+
+article {
+    position: relative;
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    min-width: 150px; /* Defina uma largura mínima para evitar que os cards fiquem muito estreitos */
+    max-width: 300px; /* Defina uma largura máxima para evitar que os cards fiquem muito largos */
+    width: 20%; /* Largura inicial, ajuste conforme necessário */
+    box-shadow: 0 0 10px var(--shadowColor);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+/* Corpo do card */
+.body-card {
+    flex: 1; /* Ocupa todo o espaço disponível na altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+  }
+
+/* Rodapé do card */
+.footer-card {
+    margin-top: auto; /* Alinha o rodapé no final do article */
+    display: flex;
+    justify-content: center; /* Alinha os botões horizontalmente */
+  }
+
+p {
+  text-align: center; /* Mantém o texto centralizado */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+article img{
+    width: 50%;
+}
+
+form{
+    margin: 20px;
+}
+
+
+.forms-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os formulários quebrem em linhas */
+    justify-content: space-around; /* Alinha os formulários ao redor do espaço disponível */
+    padding: 20px; /* Adiciona algum espaçamento interno para melhorar a aparência */
+  }
+
+  .forms-section form {
+    flex: 1; /* Ocupa todo o espaço disponível horizontalmente */
+    max-width: 400px; /* Define uma largura máxima para os formulários */
+    margin: 10px; /* Adiciona algum espaçamento entre os formulários */
+  }
+
+/*mobile*/
+
+
+/*demais tamanhos*/
+
